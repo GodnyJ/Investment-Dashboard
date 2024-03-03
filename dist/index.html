@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <nav
+      class="flex items-center justify-between flex-wrap bg-gradient-to-r from-bg-dark-blue via-bg-blue to-bg-dark-blue p-6 w-full"
+    >
+      <!-- Logo -->
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <img src="./assets/logo.png" alt="Logo" class="h-12 w-12 p-0" />
+      </div>
+
+      <!-- Search input -->
+
+      <form id="searchForm" class="text-sm lg:flex w-80">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Wpisz symbol akcji (np. AAPL)"
+          required
+          class="appearance-none w-full rounded-r-none bg-gray-200 text-gray-700 border rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white"
+        />
+        <button
+          type="submit"
+          class="appearance-none rounded-l-none bg-btn-blue text-white rounded py-2 px-4 leading-tight"
+        >
+          Szukaj
+        </button>
+      </form>
+
+      <!-- Menu -->
+      <div class="text-sm text-white uppercase tracking-wide">
+        <a href="#asystent" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+          Asystent AI
+        </a>
+        <a href="#alerty" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+          Alerty
+        </a>
+        <a href="#notatki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+          Notatki
+        </a>
+        <button
+          class="bg-main-green hover:bg-main-green-hover text-white uppercase tracking-widefont-bold py-2 px-4 rounded"
+        >
+          Portfel
+        </button>
+      </div>
+    </nav>
+    <!-- ------------------------------------------------------------------------------------ -->
+    <main
+      class="flex flex-col m-0 bg-gradient-to-r from-bg-dark-blue via-bg-blue to-bg-dark-blue w-screen"
+    >
+      <!-- -------------------------------------------------------------------------------------------- -->
+
+      <div class="flex flex-row">
+        <div
+          class="flex flex-col justify-between py-6 px-9 mr-6 w-2/6 uppercase font-roboto rounded-lg bg-card-gradient-vertical"
+        >
+          <h3 class="uppercase tracking-widest text-xs text-text-light-grey">
+            Obserwowane akcje
+          </h3>
+
+          <div class="flex flex-row justify-between items-center">
+            <p class="inline-block uppercase text-3xl font-bold stock-name">
+              aletic
+            </p>
+            <p class="inline-block uppercase font-semibold">msdr</p>
+            <p class="inline-block uppercase font-semibold">klpw</p>
+          </div>
+
+          <div class="mb-4 mt-4 uppercase">
+            <p class="text-text-light-grey text-xs tracking-widest">
+              Kurs akcji
+            </p>
+            <div class="flex flex-row justify-between items-center">
+              <p class="inline-block font-bold text-3xl stock-price">129,10</p>
+              <p
+                class="inline-block text-2xl text-main-green font-bold stock-change-percent"
+              >
+                1,43%
+              </p>
+              <p
+                class="inline-block text-2xl text-main-green font-bold stock-change"
+              >
+                0,443
+              </p>
+            </div>
+            <div class="flex flex-row justify-between">
+              <p
+                class="inline-block pt-1 text-text-light-grey text-xs tracking-widest"
+              >
+                Kurs odniesienia
+              </p>
+              <p
+                class="inline-block text-sm text-text-light-grey tracking-widest stock-previous-close"
+              >
+                130,00
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="text-text-light-grey text-xs tracking-widest">Max</p>
+              <p class="text-xl font-bold stock-high">130,00</p>
+            </div>
+            <div>
+              <p class="text-text-light-grey text-xs tracking-widest">Min</p>
+              <p class="text-xl font-bold stock-low">127,60</p>
+            </div>
+            <div>
+              <p class="text-text-light-grey text-xs tracking-widest">
+                Ostatnia transakcja
+              </p>
+              <p class="text-xl font-bold">128,91</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-between mt-2">
+            <div>
+              <p class="text-text-light-grey text-xs tracking-widest">RSI</p>
+              <p class="text-xl font-bold">56,2</p>
+            </div>
+            <div>
+              <p class="text-text-light-grey text-xs tracking-widest">MACD</p>
+              <p class="text-xl font-bold">0,11></p>
+            </div>
+
+            <div>
+              <p class="pr-5 text-text-light-grey text-xs tracking-widest">
+                Średnia krocząca
+              </p>
+              <p class="text-xl font-bold">31,26</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-6 text-xs text-white">
+            <button
+              class="py-2 px-2 w-3/12 mr-1 bg-main-green hover:bg-main-green-hover rounded uppercase tracking-widest"
+            >
+              Dzień
+            </button>
+            <button
+              class="bg-main-green w-3/12 mr-1 hover:bg-main-green-hover py-2 px-2 rounded uppercase tracking-widest"
+            >
+              Tydzień
+            </button>
+            <button
+              class="bg-main-green w-3/12 mr-1 hover:bg-main-green-hover py-2 px- rounded uppercase tracking-widest"
+            >
+              Miesiąc
+            </button>
+            <button
+              class="bg-main-green w-3/12 hover:bg-main-green-hover py-2 px-4 rounded uppercase tracking-widest"
+            >
+              Rok
+            </button>
+          </div>
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------- -->
+
+        <div class="w-4/6 mr-6 font-roboto rounded-lg custom-bg">
+          <svg width="1100" height="360">
+            <defs>
+              <linearGradient
+                id="słupekGradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="#43D9B6" stop-opacity="1" />
+                <stop offset="15%" stop-color="black" stop-opacity="1" />
+                <stop offset="100%" stop-color="black" stop-opacity="1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------------------------------------------------------- -->
+      <div>
+        <div class="flex flex-row">
+          <div
+            class="w-2/4 h-1/4 p-6 pr-8 mr-6 mt-6 font-roboto rounded-lg bg-card-gradient-vertical"
+          >
+            <p class="font-bold text-lg text-bg-dark-blue">Wolumen obrotu</p>
+            <svg id="volumeChart" width="600" height="220"></svg>
+          </div>
+          <div
+            class="w-2/6 h-1/4 p-6 mr-6 mt-6 font-roboto rounded-lg bg-card-gradient-vertical"
+          >
+            <p class="font-bold text-lg text-bg-dark-blue">
+              Wskaźnik siły względnej (RSI)
+            </p>
+            <svg id="RSIChart" width="400" height="220"></svg>
+          </div>
+          <div
+            class="w-2/6 h-1/4 p-6 mr-6 mt-6 font-roboto rounded-lg bg-card-gradient-vertical"
+          >
+            <p class="font-bold text-lg text-bg-dark-blue">Historia dywident</p>
+            <svg height="220"></svg>
+          </div>
+        </div>
+
+        <div class="flex mb-6">
+          <div class="h-1/4 w-2/5 mr-6 mt-6 font-roboto">
+            <div
+              class="flex justify-between items-center py-6 px-8 rounded-t-lg text-white bg-gradient-to-r from-bg-g-black to-bg-g-dark-blue"
+            >
+              <p class="font-bold text-3xl stock-name">ALETIC</p>
+              <div>
+                <p class="text-xs tracking-widest uppercase">Przychody</p>
+                <p class="text-2xl">32 581,60</p>
+              </div>
+              <div>
+                <p class="text-xs tracking-widest uppercase">Zyski</p>
+                <p class="text-2xl text-main-green font-bold">11 623,87</p>
+              </div>
+            </div>
+            <div class="px-6 pt-6 pb-4 rounded-b-lg bg-card-gradient-vertical">
+              <div class="flex justify-between">
+                <div>
+                  <p class="text-xs tracking-widest uppercase">Branża</p>
+                  <p class="uppercase font-semibold">Działalność bankowa</p>
+                </div>
+                <div class="pr-20">
+                  <p class="text-xs tracking-widest uppercase">Sektor</p>
+                  <p class="uppercase font-semibold">Usługi</p>
+                </div>
+              </div>
+              <div>
+                <p class="pt-4 text-sm">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolorem quasi blanditiis sint ipsam impedit totam.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-3/5 mt-6 mr-6">
+            <div
+              class="flex justify-between p-6 bg-card-gradient-vertical rounded-lg"
+            >
+              <div>
+                <p class="font-semibold">Wolumen obrotu</p>
+                <p class="text-2xl font-bold">21 szt</p>
+              </div>
+              <div>
+                <p class="font-semibold">Liczba transakcji</p>
+                <p class="text-2xl font-bold">17</p>
+              </div>
+              <div>
+                <p class="font-semibold">Wartość obrotu</p>
+                <p class="text-2xl font-bold">1654,19</p>
+              </div>
+              <div>
+                <p class="font-semibold">Roczna stopa zwrotu</p>
+                <p class="text-2xl font-bold text-main-green">62.11%</p>
+              </div>
+              <div class="h-4">
+                <img
+                  class="h-14"
+                  src="./assets/Component-green.png"
+                  alt="chart-icon"
+                />
+              </div>
+            </div>
+
+            <div class="flex mt-6">
+              <div
+                class="flex justify-between w-3/5 p-6 mr-6 bg-card-gradient-vertical rounded-lg"
+              >
+                <div>
+                  <p class="font-semibold">Nazwa spółki</p>
+                  <p class="text-2xl font-bold">Alketicimo SpA</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Prezes</p>
+                  <p class="text-2xl font-bold">John Doe</p>
+                </div>
+                <div>
+                  <p class="font-semibold">Liczba akcji</p>
+                  <p class="text-2xl font-bold">1 712 423</p>
+                </div>
+              </div>
+
+              <div
+                class="flex justify-between w-2/5 p-6 bg-card-gradient-vertical rounded-lg"
+              >
+                <div>
+                  <p class="font-semibold">Całkowite zadłużenie</p>
+                  <p class="text-2xl font-bold text-main-red">1 743 252,61</p>
+                </div>
+                <div class="h-4">
+                  <img
+                    class="h-14"
+                    src="./assets/Component-red.png"
+                    alt="chart-icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

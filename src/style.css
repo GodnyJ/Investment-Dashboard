@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-bg {
+  background-image: url("/dist/assets/main-chart-img.jpg");
+  background-size: cover;
+}
+
+.grid-line line {
+  stroke: #9cccda;
+  stroke-opacity: 0.3;
+  padding-left: 30px;
+}
+
+.grid-line .domain {
+  display: none;
+}
